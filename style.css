@@ -10,13 +10,14 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: black;
-    height: 100vh;
+    height: 100svh;
     gap: 15px;
 }
 
 h1{
     font-size: 4rem;
     color: white;
+    margin: 10px;
 }
 
 button{
@@ -44,5 +45,11 @@ button a{
 
     &:hover{
         color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    button{
+        width: 90vw;
     }
 }

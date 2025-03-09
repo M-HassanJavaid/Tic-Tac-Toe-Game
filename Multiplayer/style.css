@@ -190,6 +190,41 @@ h1{
 @media (max-width: 530px) {
 
     #info{
-        width: 95vw;
+        width: 90vw;
     }
+
+    #container{
+        height: 400px;
+        width: 400px;
+    }
+
+    .box{
+        font-size: 6rem;
+    }
+
+}
+
+@media (max-width: 420px) {
+    #container{
+        height: 300px;
+        width: 300px;
+    }
+
+    #RetryBtn{
+        width: 90%;
+    }
+
+    #TossBtn{
+        width: 90%;
+    }
+
+    .anotherPlayer{
+        width: 90%;
+    }
+
+    .box{
+        font-size: 4rem;
+    }
+
+
 }
