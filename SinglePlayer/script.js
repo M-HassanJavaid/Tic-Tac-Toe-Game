@@ -102,7 +102,7 @@ function CheckWin() {
             return 'win'
         }
     } else if (TurnCount === 9) {
-        TossWin.innerText = 'Oops, The game is tyed!';
+        TossWin.innerText = 'Oops, The game is tied!';
         RetryBtn.style.display = 'block';
     }
 }
