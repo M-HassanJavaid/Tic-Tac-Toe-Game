@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+h1{
+    font-size: 3rem;
+    text-decoration: underline;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#container{
+    height: 500px;
+    width: 500px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background: linear-gradient(270deg, 
+      #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #4400ff, #ff00aa);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 90px 40px rgba(255, 255, 255, 0.56);
+}
+
+#box1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#box2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#box3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#box4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#box5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#box6{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#box7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#box8{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#box9{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+.box{
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-weight: 900;
+    font-size: 7rem;
+    user-select: none;
+    pointer-events: none;
+}
+
+#info{
+    color: black;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+#TossBtn{
+    color: black;
+    background-color: yellow;
+    font-size: 1.2rem;
+    margin-block: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 3rem;
+    width: 18rem;
+
+    &:hover{
+        background-color: red;
+        color: white;
+    }
+    
+}
+
+.anotherPlayer{
+    color: black;
+    background-color: yellow;
+    font-size: 1.2rem;
+    margin-block: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    height: 3rem;
+    width: 18rem;
+
+    &:hover{
+        background-color: red;
+    }
+}
+
+.anotherPlayer a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+
+    &:hover{
+        color: white;
+    }
+}
+
+#RetryBtn{
+    color: black;
+    background-color: yellow;
+    font-size: 1.2rem;
+    margin-block: 10px;
+    border-radius: 10px;
+    display: none;
+    cursor: pointer;
+    height: 3rem;
+    width: 18rem;
+
+    &:hover{
+        background-color: red;
+        color: white;
+    }
+}
+
+#TossWon{
+    margin-block: 10px;
+}
+
+@media (max-width: 530px) {
+
+    #info{
+        width: 95vw;
+    }
+}

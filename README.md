@@ -1,0 +1,2 @@
+# Tic-Tac-Toe-Game
+ A simple Tic Tac Toe game built using HTML, CSS, and JavaScript. You can play in multiplayer mode with a friend or challenge a computer bot. The bot opponent is built using pure JavaScript logic without any AI. The game features a clean and responsive design, making it easy to play on any device. Feel free to explore, modify, and improve the code. Contributions and feedback are welcome!
