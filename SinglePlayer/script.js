@@ -30,7 +30,7 @@ let TurnCount = 0;
 function BotTurn() {
     let boxCollection = [box1, box2, box3, box4, box5, box6, box7, box8, box9];
     let RandomBotMark;
-    for (let i = 0; i < boxCollection.length; i++) {
+    for (let i = 0; i >= 0; i++) {
         RandomBotMark = boxCollection[Math.floor(Math.random() * 9)];
         if (RandomBotMark.innerText != 'X' && RandomBotMark.innerText != 'O') {
             RandomBotMark.style.color = 'transparent';
@@ -85,7 +85,6 @@ function CheckWin() {
         ((box1.innerText === box5.innerText) && (box5.innerText === box9.innerText) && (box9.innerText === 'X' || box9.innerText === 'O')) ||
         ((box7.innerText === box5.innerText) && (box5.innerText === box3.innerText) && (box3.innerText === 'X' || box3.innerText === 'O'))) {
         if (TossWinner === 'X') {
-            console.log('X helo')
             TossWin.innerText = 'Sorry, But you loss the game!';
             RetryBtn.style.display = 'block';
             AllBoxes.forEach((element) => {
@@ -93,7 +92,6 @@ function CheckWin() {
             });
             return 'win'
         } else if (TossWinner === 'O') {
-            console.log('O helo')
             TossWin.innerText = 'Congratulation, You win the game!';
             RetryBtn.style.display = 'block';
             AllBoxes.forEach((element) => {
